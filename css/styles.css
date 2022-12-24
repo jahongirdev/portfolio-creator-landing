@@ -563,12 +563,21 @@ a {
   opacity: 0.7;
 }
 
+.thats-me {
+  margin-top: 150px;
+}
 
 
+.thatsme-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.thatsme-top-left {}
 
-
-
+.thatsme-top-right {}
 
 
 
