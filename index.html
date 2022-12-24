@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Creator</title>
+
+  <!-- SEO Meta tags -->
+  <meta name="description" content="Portfolio Creator">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="HTML, CSS, Javascript, Web">
+  <meta name="author" content="Jahongir Murodboev">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="site-container">
+      <nav class="site-navbar">
+        <a class="site-logo" href="">
+          <img class="site-logo-img" src="img/logo.svg" alt="Site Logo: Portfolio Creator">
+        </a>
+        <ul class="site-navbar-menu">
+          <li class="site-navbar-menu-item"><a class="site-navbar-menu-link" href="#">About</a></li>
+          <li class="site-navbar-menu-item"><a class="site-navbar-menu-link" href="#">Services</a></li>
+          <li class="site-navbar-menu-item"><a class="site-navbar-menu-link" href="#">Projects</a></li>
+          <li class="site-navbar-menu-item"><a class="site-navbar-menu-link" href="#">Blog</a></li>
+          <li class="site-navbar-menu-item"><a class="site-navbar-menu-link" href="#">Book a call
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_452)">
+                  <path
+                    d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                    fill="currentColor" />
+                </g>
+              </svg>
+            </a></li>
+        </ul>
+        <button class="site-mobile-menu-icon" onclick="openNav()">
+          <img src="img/menu-icon.svg" alt="Site Mobile Menu Icon">
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div id="mySidenav" class="sidenav" style="width: 0px;">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <img src="img/icon-menu-close.svg" alt="Menu Close Icon">
+    </a>
+    <a href="#">Home</a>
+    <a href="#">New</a>
+    <a href="#">Popular</a>
+    <a href="#">Trending</a>
+    <a href="#">Categories</a>
+  </div>
+
+  <main class="main-content">
+    <section class="site-hero">
+      <div class="site-container">
+        <div class="site-hero__hero">
+          <div class="site-hero__hero-content">
+            <h2 class="site-hero__hero-content--heading">
+              <span>I design products</span>
+              that delight and inspire people.
+            </h2>
+            <p class="site-hero__hero-content--text">Hi! I'm Jake, a product designer based in Berlin. I create
+              user-friendly interfaces for fast-growing
+              startups.</p>
+            <div class="site-hero__hero-content-btn">
+              <a href="#" class="first-btn">Book a call</a>
+              <a href="#" class="second-btn">Download CV
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_452)">
+                    <path
+                      d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                      fill="currentColor" />
+                  </g>
+                </svg></a>
+            </div>
+          </div>
+          <div class="site-hero__hero-image">
+            <img src="img/hero-img.png" alt="Site Hero Section Image"
+              srcset="img/hero-img.png 1x, img/hero-img@2x.png 2x">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trusted-by">
+      <div class="site-container">
+        <div class="trusted-by-parent">
+          <span class="trusted-by-heading">Trusted by</span>
+          <div class="trusted-by-logo-parent">
+            <a href="#"><img src="img/logo1.svg" alt="First Logo"></a>
+            <a href="#"><img src="img/logo2.svg" alt="Second Logo"></a>
+            <a href="#"><img src="img/logo3.svg" alt="Third Logo"></a>
+            <a href="#"><img src="img/logo4.svg" alt="Fourth Logo"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="site-container">
+        <div class="services-parent">
+          <div class="services-parent-top">
+            <span>Services</span>
+            <h2>Design that solves problems, one product at a time.</h2>
+          </div>
+          <div class="services-parent-bottom">
+            <div class="services-parent-bottom-child">
+              <img src="img/services-vector1.svg" alt="Services Vector First">
+              <h3>What I can do for you</h3>
+              <p>Faster, better products that your users love. Here's all the services I provide:</p>
+              <ul>
+                <li>Design Strategy</li>
+                <li>Web and Mobile App Design</li>
+                <li>Front-end Development</li>
+              </ul>
+            </div>
+            <div class="services-parent-bottom-child">
+              <img src="img/services-vector2.svg" alt="Services Vector Second">
+              <h3>Applications I'm fluent in</h3>
+              <p>Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.</p>
+              <ul>
+                <li>Sketch</li>
+                <li>Webflow</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+            <div class="services-parent-bottom-child">
+              <img src="img/services-vector3.svg" alt="Services Vector Third">
+              <h3>What you can expect</h3>
+              <p>I design products that are more than pretty. I make them shippable and usable.</p>
+              <ul>
+                <li>Clean and functional</li>
+                <li>Device and user friendly</li>
+                <li>Efficient and maintainable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="site-container">
+        <div class="projects-parent">
+          <div class="projects-parent-top">
+            <div class="projects-parent-top-content">
+              <span>PROJECTS</span>
+              <h2>I bring results. <br> My clients are proof.</h2>
+            </div>
+            <div class="projects-parent-top-btn">
+              <a class="projects-parent-top-btn--btn" href="#">View all projects</a>
+            </div>
+          </div>
+          <div class="projects-parent-bottom">
+            <div class="my-slider">
+              <div class="slider-box">
+                <img src="img/slider-img1.png" alt="Slider Image"
+                  srcset="img/slider-img1.png 1x, img/slider-img1@2x.png 2x">
+                <div class="slider-box-content">
+                  <span>Branding</span>
+                  <h3>Soulful Rebrand</h3>
+                  <a href="#">View Project <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_452)">
+                        <path
+                          d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                          fill="currentColor"></path>
+                      </g>
+                    </svg></a>
+                </div>
+              </div>
+              <div class="slider-box">
+                <img src="img/slider-img2.png" alt="Slider Image"
+                  srcset="img/slider-img2.png 1x, img/slider-img2@2x.png 2x">
+                <div class="slider-box-content">
+                  <span>Product Design</span>
+                  <h3>Datadash Product design</h3>
+                  <a href="#">View Project <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_452)">
+                        <path
+                          d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                          fill="currentColor"></path>
+                      </g>
+                    </svg></a>
+                </div>
+              </div>
+              <div class="slider-box">
+                <img src="img/slider-img1.png" alt="Slider Image"
+                  srcset="img/slider-img1.png 1x, img/slider-img1@2x.png 2x">
+                <div class="slider-box-content">
+                  <span>Web Design</span>
+                  <h3>Maize Website Design</h3>
+                  <a href="#">View Project <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_452)">
+                        <path
+                          d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                          fill="currentColor"></path>
+                      </g>
+                    </svg></a>
+                </div>
+              </div>
+              <div class="slider-box">
+                <img src="img/slider-img2.png" alt="Slider Image"
+                  srcset="img/slider-img2.png 1x, img/slider-img2@2x.png 2x">
+                <div class="slider-box-content">
+                  <span>Branding</span>
+                  <h3>Leamon Rebrand</h3>
+                  <a href="#">View Project <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_452)">
+                        <path
+                          d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                          fill="currentColor"></path>
+                      </g>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-buttons">
+              <button type="button" class="sliderPrevBtn"><img src="img/left-icon.svg" alt="Left icon"></button>
+              <button type="button" class="sliderNextBtn"><img src="img/right-icon.svg" alt="Right icon"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blogs">
+      <div class="site-container">
+        <div class="blog">
+          <div class="blog-left">
+            <span>BLOGS</span>
+            <h2>Latest Blogs</h2>
+            <a href="#">View all
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_452)">
+                  <path
+                    d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                    fill="currentColor"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="blog-right">
+            <div class="blog-right-child">
+              <span>April 16, 2021 | 6 mins</span>
+              <h3>Design tips for designers, that cover everything you need</h3>
+              <a href="#">Read the article
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_452)">
+                    <path
+                      d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                      fill="currentColor"></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <hr>
+            <div class="blog-right-child">
+              <span>April 16, 2021 | 5 mins</span>
+              <h3>How to build rapport with your web design clients</h3>
+              <a href="#">Read the article
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_452)">
+                    <path
+                      d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                      fill="currentColor"></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <hr>
+            <div class="blog-right-child">
+              <span>April 16, 2021 | 6 mins</span>
+              <h3>Top 6 free website mockup tools 2021</h3>
+              <a href="#">Read the article
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_452)">
+                    <path
+                      d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                      fill="currentColor"></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <hr>
+            <div class="blog-right-child">
+              <span>April 16, 2021 | 7 mins</span>
+              <h3>Logo design trends to avoid in 2021</h3>
+              <a href="#">Read the article
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_452)">
+                    <path
+                      d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                      fill="currentColor"></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <hr>
+            <div class="blog-right-child">
+              <span>April 16, 2021 | 7 mins</span>
+              <h3>22 best UI design tools</h3>
+              <a href="#">Read the article
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_452)">
+                    <path
+                      d="M9.72837 5.50978L5.57767 1.35907L6.67183 0.2649L12.6905 6.28359L6.67183 12.3023L5.57767 11.2081L9.72837 7.0574H0.30957V5.50978H9.72837Z"
+                      fill="currentColor"></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script>
+    const sliderPrevButton = document.querySelector(".sliderPrevBtn");
+    const sliderNextButton = document.querySelector(".sliderNextBtn");
+
+    var slider = tns({
+      container: ".my-slider",
+      items: 1,
+      prevButton: sliderPrevButton,
+      nextButton: sliderNextButton,
+      nav: false,
+      arrowKeys: true,
+      responsive: {
+        640: {
+          edgePadding: 20,
+          gutter: 20,
+          items: 2
+        },
+        700: {
+          gutter: 30
+        },
+        900: {
+          items: 3
+        }
+      },
+      slideBy: 1,
+      mouseDrag: true,
+      speed: 400
+    });
+  </script>
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
