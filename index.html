@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
+  <link rel="stylesheet" href="vendor/splide-4.1.3/dist/css/splide.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -341,10 +342,84 @@
                 companies. I love crafting interfaces that delight users and help businesses grow.</p>
             </div>
           </div>
-          <div class="thatsme-bottom"></div>
+          <div class="thatsme-bottom">
+            <div class="thatsme-bottom-child">
+              <img src="img/img1.png" alt="That's Me Section Image" srcset="img/img1.png 1x, img/img1@2x.png 2x">
+            </div>
+            <div class="thatsme-bottom-child">
+              <img src="img/img2.png" alt="That's Me Section Image" srcset="img/img2.png 1x, img/img2@2x.png 2x">
+            </div>
+            <div class="thatsme-bottom-child">
+              <img src="img/img3.png" alt="That's Me Section Image" srcset="img/img3.png 1x, img/img3@2x.png 2x">
+            </div>
+            <div class="thatsme-bottom-child">
+              <img src="img/img4.png" alt="That's Me Section Image" srcset="img/img4.png 1x, img/img4@2x.png 2x">
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <sectin class="testimonials">
+      <div class="site-container">
+        <div class="testimonials-parent">
+          <div class="testimonials-parent-top">
+            <span>Testimonials</span>
+            <h2>Word on the street</h2>
+          </div>
+          <div class="testimonials-parent-bottom">
+            <div class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide sec-slider">
+                    <div class="sec-slider-img">
+                      <img src="img/test-img1.png" alt="Testimonials Slider Image">
+                    </div>
+                    <div class="sec-slider-text">
+                      <img src="img/blockquote.svg" alt="blockquote icon">
+                      <h3>Jade helped us build a software so intuitive that it didn't need a walkthrough. He solved
+                        complex problems with brilliant design.</h3>
+                      <div class="sec-slider-text-bottom">
+                        <p>John Frankin</p>
+                        <span>Founder, Double Bunch</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide sec-slider">
+                    <div class="sec-slider-img">
+                      <img src="img/test-img1.png" alt="Testimonials Slider Image">
+                    </div>
+                    <div class="sec-slider-text">
+                      <img src="img/blockquote.svg" alt="blockquote icon">
+                      <h3>Jade helped us build a software so intuitive that it didn't need a walkthrough. He solved
+                        complex problems with brilliant design.</h3>
+                      <div class="sec-slider-text-bottom">
+                        <p>John Frankin</p>
+                        <span>Founder, Double Bunch</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide sec-slider">
+                    <div class="sec-slider-img">
+                      <img src="img/test-img1.png" alt="Testimonials Slider Image">
+                    </div>
+                    <div class="sec-slider-text">
+                      <img src="img/blockquote.svg" alt="blockquote icon">
+                      <h3>Jade helped us build a software so intuitive that it didn't need a walkthrough. He solved
+                        complex problems with brilliant design.</h3>
+                      <div class="sec-slider-text-bottom">
+                        <p>John Frankin</p>
+                        <span>Founder, Double Bunch</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </sectin>
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
@@ -376,6 +451,11 @@
       mouseDrag: true,
       speed: 400
     });
+  </script>
+  <script src="vendor/splide-4.1.3/dist/js/splide.min.js"></script>
+  <script>
+    var splide = new Splide('.splide');
+    splide.mount();
   </script>
   <script src="js/nav.js"></script>
 </body>
