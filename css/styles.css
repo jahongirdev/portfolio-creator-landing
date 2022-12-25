@@ -16,6 +16,24 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 2px dotted #FF8A56;
+  outline-offset: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  outline: 1px solid slategrey;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -692,15 +710,199 @@ a {
 }
 
 
+.faq {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 80px 0px;
+}
 
+.faq-top {
+  text-align: center;
+}
 
+.faq-top span {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FF8A56;
+}
 
+.faq-top h2 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 59px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
 
+.faq-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 150px;
+}
 
+.accr-child {
+  width: 580px;
+}
 
+.faq-bottom-left hr,
+.faq-bottom-right hr {
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.3);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
 
+.accordion {
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+  padding: 18px 0px;
+  width: 100%;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.accordion span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+}
 
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  color: var(--black);
+  display: none;
+  overflow: hidden;
+}
+
+.site-footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 50px 0px;
+}
+
+.footer-top h2 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 59px;
+  letter-spacing: 1px;
+}
+
+.footer-top h2 span {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 59px;
+  letter-spacing: 0.5px;
+  color: #3C46FF;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.footer-bottom-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bottom-left span.footer-location {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #666666;
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom-left .footer-email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #666666;
+  transition: all 0.3s ease;
+}
+
+.footer-bottom-left .footer-email:hover {
+  color: var(--white);
+}
+
+.footer-bottom-left .footer-email img {
+  margin-right: 6px;
+}
+
+.footer-bottom-right {
+  display: flex;
+}
+
+.footer-ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-right: 110px;
+}
+
+.footer-ul:last-child {
+  margin-right: 0;
+}
+
+.footer-ul-item {
+  margin-bottom: 40px;
+}
+
+.footer-ul-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-ul-link {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  transition: all 0.3s ease;
+}
+
+.footer-ul-link:hover {
+  opacity: 0.6;
+}
+
+.footer-ul-link:active {
+  opacity: 0.4;
+}
+
+.footer-last {
+  margin-top: 130px;
+}
+
+.footer-last span,
+a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8A95AD;
+  margin-right: 10px;
+}
+
+.footer-last a:hover {
+  opacity: 0.7;
+}
+
+.footer-last a:active {
+  opacity: 0.5;
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -731,6 +933,15 @@ only screen and (min-resolution: 2dppx) {}
 
   .sec-slider-text h3 {
     width: auto;
+  }
+
+  .faq-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accr-child {
+    width: 100%;
   }
 }
 
@@ -763,6 +974,15 @@ only screen and (min-resolution: 2dppx) {}
 
   .blog-right {
     margin-top: 60px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-bottom-right {
+    margin-top: 40px;
   }
 }
 
@@ -832,6 +1052,17 @@ only screen and (min-resolution: 2dppx) {}
   .thatsme-top-right {
     width: auto;
   }
+
+  .footer-top h2 {
+    font-size: 44px;
+    line-height: 49px;
+  }
+
+  .footer-top h2 span {
+    font-size: 44px;
+    line-height: 49px;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -855,6 +1086,15 @@ only screen and (min-resolution: 2dppx) {}
     width: auto;
     font-size: 25px;
     line-height: 25px;
+  }
+
+  .footer-bottom-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-ul {
+    margin-bottom: 40px;
   }
 }
 
